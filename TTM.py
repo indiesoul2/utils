@@ -114,7 +114,7 @@ def ReturnPortfolio(R, weights):
             bop_value_total.iloc[k] = bop_value.iloc[k, :].sum()
                         
             # Compute end of period values
-            eop_value.iloc[k, :] = (1 + returns.iloc[j, :]) * bop_value.iloc[k, :]
+            eop_value.iloc[k, :] = (1 + returns.iloc[j, :].values) * bop_value.iloc[k, :]..values
             eop_value_total.iloc[k] = eop_value.iloc[k, :].sum()
             
             # Compute portfolio returns
