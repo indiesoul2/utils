@@ -107,9 +107,9 @@ def ReturnPortfolio(R, weights):
                 bop_value.iloc[k, :] = end_value * weights.iloc[i, :]
             else :
                 bop_value.iloc[k, :] = eop_value.iloc[k-1, :]
-            print("============weights.iloc============")
-            print(weights.iloc[i, :])
-            print(end_value)
+            #print("============weights.iloc============")
+            #print(weights.iloc[i, :])
+            #print(end_value)
             
             bop_value_total.iloc[k] = bop_value.iloc[k, :].sum()
                         
